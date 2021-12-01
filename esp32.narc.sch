@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Memory:W25Q32JVSSIQ_TR U1
+U 1 1 61A41379
+P 9300 2650
+F 0 "U1" H 9644 2696 50  0000 L CNN
+F 1 "W25Q32JVSSIQ_TR" H 9644 2605 50  0000 L CNN
+F 2 "digikey-footprints:SOIC-8_W5.6mm" H 9500 2850 60  0001 L CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 9500 2950 60  0001 L CNN
+F 4 "W25Q32JVSSIQCT-ND" H 9500 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "W25Q32JVSSIQ TR" H 9500 3150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9500 3250 60  0001 L CNN "Category"
+F 7 "Memory" H 9500 3350 60  0001 L CNN "Family"
+F 8 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 9500 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/winbond-electronics/W25Q32JVSSIQ-TR/W25Q32JVSSIQCT-ND/7393546" H 9500 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC FLASH 32M SPI 133MHZ 8SOIC" H 9500 3650 60  0001 L CNN "Description"
+F 11 "Winbond Electronics" H 9500 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9500 3850 60  0001 L CNN "Status"
+	1    9300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pico_1v4-eagle-import:PINHEAD9 LE_HEADERS1
+U 1 1 61A4425F
+P 2200 2450
+F 0 "LE_HEADERS1" H 2278 2450 59  0000 L CNN
+F 1 "PINHEAD9" H 2200 2450 50  0001 C CNN
+F 2 "" H 2200 2450 50  0001 C CNN
+F 3 "" H 2200 2450 50  0001 C CNN
+	1    2200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pico_1v4-eagle-import:PINHEAD9 RE_HEADERS1
+U 1 1 61A4492F
+P 2200 3850
+F 0 "RE_HEADERS1" H 2278 3850 59  0000 L CNN
+F 1 "PINHEAD9" H 2200 3850 50  0001 C CNN
+F 2 "" H 2200 3850 50  0001 C CNN
+F 3 "" H 2200 3850 50  0001 C CNN
+	1    2200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0101
+U 1 1 61A54B94
+P 9300 3050
+F 0 "#PWR0101" H 9300 2800 50  0001 C CNN
+F 1 "GNDD" H 9304 2895 50  0000 C CNN
+F 2 "" H 9300 3050 50  0001 C CNN
+F 3 "" H 9300 3050 50  0001 C CNN
+	1    9300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2250 9300 1900
+Wire Wire Line
+	9300 1700 8600 1700
+Wire Wire Line
+	8600 1700 8600 1850
+Wire Wire Line
+	9600 2650 9600 2150
+Wire Wire Line
+	9600 2150 8600 2150
+$Comp
+L Device:C C2
+U 1 1 61A77793
+P 7700 1600
+F 0 "C2" H 7815 1646 50  0000 L CNN
+F 1 "C" H 7815 1555 50  0000 L CNN
+F 2 "" H 7738 1450 50  0001 C CNN
+F 3 "~" H 7700 1600 50  0001 C CNN
+	1    7700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61A76FC6
+P 8600 2000
+F 0 "R1" H 8670 2046 50  0000 L CNN
+F 1 "R" H 8670 1955 50  0000 L CNN
+F 2 "" V 8530 2000 50  0001 C CNN
+F 3 "~" H 8600 2000 50  0001 C CNN
+	1    8600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1900 10150 1900
+Wire Wire Line
+	10150 1900 10150 1500
+Connection ~ 9300 1900
+Wire Wire Line
+	9300 1900 9300 1700
+$Comp
+L Device:C C1
+U 1 1 61A826BF
+P 10150 1350
+F 0 "C1" H 10265 1396 50  0000 L CNN
+F 1 "C" H 10265 1305 50  0000 L CNN
+F 2 "" H 10188 1200 50  0001 C CNN
+F 3 "~" H 10150 1350 50  0001 C CNN
+	1    10150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0102
+U 1 1 61A83231
+P 10150 1200
+F 0 "#PWR0102" H 10150 950 50  0001 C CNN
+F 1 "GNDD" H 10154 1045 50  0000 C CNN
+F 2 "" H 10150 1200 50  0001 C CNN
+F 3 "" H 10150 1200 50  0001 C CNN
+	1    10150 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L L_RF_Module:CUSTOM-ESP32-PICO-D4 U0
+U 1 1 61A80163
+P 5800 2850
+F 0 "U0" H 5800 4131 50  0000 C CNN
+F 1 "CUSTOM-ESP32-PICO-D4" H 5800 4040 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 5750 1150 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5950 1250 50  0001 C CNN
+	1    5800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2450 8600 2450
+Wire Wire Line
+	8600 2450 8600 2950
+Wire Wire Line
+	8900 2550 8650 2550
+Wire Wire Line
+	8650 2550 8650 3050
+Wire Wire Line
+	8650 3050 6900 3050
+Wire Wire Line
+	8900 2650 6900 2650
+Wire Wire Line
+	6900 2950 8600 2950
+Wire Wire Line
+	6900 2750 8900 2750
+Wire Wire Line
+	8900 2850 8700 2850
+Wire Wire Line
+	8700 2850 8700 3150
+Wire Wire Line
+	8700 3150 6900 3150
+Wire Wire Line
+	8600 2150 8600 2450
+Connection ~ 8600 2150
+Connection ~ 8600 2450
+Wire Wire Line
+	6900 3350 8500 3350
+Wire Wire Line
+	8500 3350 8500 1700
+Wire Wire Line
+	8500 1700 8600 1700
+Connection ~ 8600 1700
+$Comp
+L PRO-OB-440:PRO-OB-440 E1
+U 1 1 61A9DB09
+P 3950 1300
+F 0 "E1" H 4080 1304 50  0000 L CNN
+F 1 "PRO-OB-440" H 4080 1213 50  0000 L CNN
+F 2 "ANT_PRO-OB-440" H 3950 1300 50  0001 L BNN
+F 3 "" H 3950 1300 50  0001 L BNN
+F 4 "Proant AB" H 3950 1300 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 3950 1300 50  0001 L BNN "STANDARD"
+F 6 "3.53mm" H 3950 1300 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "3.2" H 3950 1300 50  0001 L BNN "PARTREV"
+	1    3950 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1300 3600 1300
+Wire Wire Line
+	3600 1300 3600 2100
+Wire Wire Line
+	3600 2100 4700 2100
+$Comp
+L dk_Interface-Controllers:CP2104-F03-GM_NRND U?
+U 1 1 61A4449E
+P 3650 5250
+F 0 "U?" H 3650 6153 60  0000 C CNN
+F 1 "CP2104-F03-GM_NRND" H 3650 6047 60  0000 C CNN
+F 2 "digikey-footprints:WQFN-24-1EP_4x4mm" H 3850 5450 60  0001 L CNN
+F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 3850 5550 60  0001 L CNN
+F 4 "336-2008-5-ND" H 3850 5650 60  0001 L CNN "Digi-Key_PN"
+F 5 "CP2104-F03-GM" H 3850 5750 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3850 5850 60  0001 L CNN "Category"
+F 7 "Interface - Controllers" H 3850 5950 60  0001 L CNN "Family"
+F 8 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 3850 6050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/silicon-labs/CP2104-F03-GM/336-2008-5-ND/2486177" H 3850 6150 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SGL USB-TO-UART BRIDGE 24QFN" H 3850 6250 60  0001 L CNN "Description"
+F 11 "Silicon Labs" H 3850 6350 60  0001 L CNN "Manufacturer"
+F 12 "Not For New Designs" H 3850 6450 60  0001 L CNN "Status"
+	1    3650 5250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
