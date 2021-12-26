@@ -1,4 +1,4 @@
-update=2021-12-05T15:11:39 PST
+update=2021-12-26T16:38:03 PST
 version=1
 last_client=kicad
 [general]
@@ -29,17 +29,19 @@ LastNetListRead=esp32.narc.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
-AllowBlindVias=0
+AllowBlindVias=1
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
-MinViaDiameter=0.4
+MinTrackWidth=0.09999999999999999
+MinViaDiameter=0.2
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.25
-TrackWidth2=0.2
+TrackWidth1=0.16
+TrackWidth2=0.16
+TrackWidth3=0.2
+TrackWidth4=0.4
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -238,8 +240,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
-TrackWidth=0.25
+Clearance=0.16
+TrackWidth=0.16
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
