@@ -1,4 +1,7 @@
 *cache.lib
 *.bck
-*-bak
+*[.-]bak
+
+fp-info-cache
+*-lib-table
 
